@@ -1,0 +1,15 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/secondary</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- for    menu    items   background    !!!!   -->
+        <item name="android:itemBackground">@color/menu_item_bg</item>
+    </style>
+
+</resources>

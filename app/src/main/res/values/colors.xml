@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/secondary</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="main_color">#416d49</color>
+
+<!--    for the only icon used in edit profile activity-->
+    <color name="main_color_2">#008000</color>
+    <color name="secondary">#d3f0d2</color>
+    <color name="menu_item_bg">#d8ecf3</color>
+    <color name="red">#e20f00</color>
+
+    <color name="table_header_bg">#f3f3f3</color>
+
+<!--    pharmacy details dialog-->
+    <color name="dialog_ok_color">#0e70f6</color>
+
+<!--    multi usages-->
+    <color name="white">#fff</color>
+
+<!--    any item details layout-->
+    <color name="item_details_title">#1e4072</color>
+    <color name="item_details_description">#2c59a2</color>
+
+<!--    add to my cart dialog-->
+    <color name="cancel_in_dialog2">#0e44a5</color>
+    <color name="ok_in_dialog2">#162198</color>
+
+    <color name="messaging_bg">#ededed</color>
+
+</resources>

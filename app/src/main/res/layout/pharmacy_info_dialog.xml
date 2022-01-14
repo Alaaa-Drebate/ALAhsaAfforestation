@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/info_dialog_bg">
+
+    <TextView
+        android:id="@+id/pharmacy_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Pharmacy Name"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/pharmacist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/pharmacist"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/address"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/phone"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/opens_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/opens_at"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/closes_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/closes_at"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/ok"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/dialog_ok_color"
+        android:padding="8dp"/>
+
+</LinearLayout>

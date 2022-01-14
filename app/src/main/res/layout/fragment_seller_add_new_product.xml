@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".sellerfragments.SellerAddNewProduct">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:isScrollContainer="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            >
+
+            <TextView
+                android:id="@+id/headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/main_color"
+                android:text="@string/add_new_product"/>
+
+            <TextView
+                android:id="@+id/name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:layout_below="@id/headline"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/item_details_title"
+                android:text="@string/product_name"/>
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/upload_image_title"
+                android:layout_alignBottom="@id/name_title"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:hint="@string/place_holder"/>
+
+            <TextView
+                android:id="@+id/description_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:layout_below="@id/name_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/item_details_title"
+                android:text="@string/Description"/>
+
+            <EditText
+                android:id="@+id/description_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/upload_image_title"
+                android:layout_alignBottom="@id/description_title"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:hint="@string/place_holder"/>
+
+            <TextView
+                android:id="@+id/planting_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_below="@id/description_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/item_details_title"
+                android:text="@string/planting_date"/>
+
+            <Spinner
+                android:id="@+id/day_chooser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@id/planting_date_title" />
+            <Spinner
+                android:id="@+id/month_chooser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/day_chooser"
+                android:layout_alignBottom="@id/day_chooser"
+                android:layout_below="@id/planting_date_title"
+                android:entries="@array/months" />
+
+            <Spinner
+                android:id="@+id/year_chooser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/month_chooser"
+                android:layout_toEndOf="@id/month_chooser"
+                android:layout_below="@id/planting_date_title" />
+
+
+            <!--    here    we  have    3   spinners    for     date    choosing-->
+
+
+
+            <TextView
+                android:id="@+id/quantity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@id/day_chooser"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/item_details_title"
+                android:text="@string/quantity2"/>
+            <Spinner
+                android:id="@+id/quantity_chooser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/upload_image_title"
+                android:layout_alignBottom="@id/quantity_title"
+                android:entries="@array/quantity_range"
+                android:layout_marginEnd="30dp" />
+
+            <TextView
+                android:id="@+id/price_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@id/quantity_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/item_details_title"
+                android:text="@string/price"/>
+
+            <Spinner
+                android:id="@+id/price_chooser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/upload_image_title"
+                android:layout_alignBottom="@id/price_title"
+                android:entries="@array/quantity_range"
+                android:layout_marginEnd="30dp" />
+
+            <TextView
+                android:id="@+id/upload_image_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/price_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/item_details_title"
+                android:text="@string/upload_image"/>
+
+            <ImageView
+                android:id="@+id/image_upload_btn"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/upload_image_title"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/ic_image_24"/>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/save_new_product_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:background="@color/main_color"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/cancel_adding_product_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:background="@color/main_color"
+        android:textColor="@color/white"/>
+</RelativeLayout>
+
+
+
+
+
+

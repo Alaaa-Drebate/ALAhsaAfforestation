@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/profile"
+        app:showAsAction="never"
+        android:title="@string/menu_profile"/>
+    <item
+        android:id="@+id/products"
+        app:showAsAction="never"
+        android:title="@string/menu_products"/>
+    <item
+        android:id="@+id/volunteers"
+        app:showAsAction="never"
+        android:title="@string/menu_volunteers"/>
+    <item
+        android:id="@+id/messages"
+        app:showAsAction="never"
+        android:title="@string/menu_messages"/>
+    <item
+        android:id="@+id/my_cart"
+        app:showAsAction="never"
+        android:title="@string/menu_my_cart"/>
+    <item
+        android:id="@+id/log_out"
+        app:showAsAction="never"
+        android:title="@string/menu_log_out"/>
+</menu>

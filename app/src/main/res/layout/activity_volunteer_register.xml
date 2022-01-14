@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/welcome_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VolunteerRegisterActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/volunteer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/headline"
+        android:background="@android:color/black"
+        android:alpha="0.1"/>
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:hint="@string/Email"/>
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_edit_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:hint="@string/name"/>
+
+    <EditText
+        android:id="@+id/next_career_skills_edit_text"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textMultiLine"
+        android:minHeight="150dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:hint="@string/career_skills"/>
+
+    <EditText
+        android:id="@+id/next_previous_jobs_edit_text"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/next_career_skills_edit_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textMultiLine"
+        android:minHeight="150dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:hint="@string/previous_jobs"/>
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_edit_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:hint="@string/password"/>
+
+    <EditText
+        android:id="@+id/password_retype_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:hint="@string/retype_password"/>
+
+    <EditText
+        android:id="@+id/phone_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_retype_edit_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="phone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:hint="@string/phone"/>
+
+    <EditText
+        android:id="@+id/address_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_edit_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:inputType="textMultiLine"
+        android:lines="1"
+        android:hint="@string/address_title"/>
+
+    <Button
+        android:id="@+id/next_create_account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:background="@color/main_color"
+        android:textColor="@color/white"/>
+
+    <com.skydoves.powerspinner.PowerSpinnerView
+        android:id="@+id/age_chooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/next_create_account_btn"
+        android:layout_alignBottom="@id/next_create_account_btn"
+        android:layout_toStartOf="@id/next_create_account_btn"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="30dp"
+        android:hint="@string/select_your_age"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14.5sp"
+        app:spinner_popup_height="200dp"
+        app:spinner_popup_width="50dp"
+        app:spinner_popup_background="@color/white"
+        app:spinner_item_array="@array/age_range"
+        app:spinner_arrow_gravity="start"
+        app:spinner_arrow_padding="8dp"
+        app:spinner_arrow_tint="@color/main_color"
+        app:spinner_divider_show="true"
+        app:spinner_divider_color="@android:color/black"
+        app:spinner_divider_size="0.3dp"
+        app:spinner_popup_animation="dropdown"
+        app:spinner_popup_elevation="14dp" />
+
+</RelativeLayout>

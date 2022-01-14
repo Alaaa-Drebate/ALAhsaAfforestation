@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProductDetailsFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/product_Image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@color/secondary"/>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/product_Image"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="egg Plant"/>
+    <TextView
+        android:id="@+id/seller_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_toEndOf="@id/product_Image"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="eg planters"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/main_color"
+        android:layout_below="@id/product_Image"/>
+
+    <TextView
+        android:id="@+id/description_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/divider"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/item_details_title"
+        android:text="@string/Description"/>
+
+    <TextView
+        android:id="@+id/description_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/available_title"
+        android:layout_alignBottom="@id/description_title"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/item_details_description"
+        android:text="good plant"/>
+    <TextView
+        android:id="@+id/planting_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@id/description_title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/item_details_title"
+        android:text="@string/planning_date"/>
+
+    <TextView
+        android:id="@+id/planting_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/available_title"
+        android:layout_alignBottom="@id/planting_date_title"
+        android:gravity="bottom"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/item_details_description"
+        android:text="22/02/2021"/>
+
+    <TextView
+        android:id="@+id/seller_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/planting_date_title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/item_details_title"
+        android:text="@string/seller_name"/>
+    <TextView
+        android:id="@+id/seller_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/available_title"
+        android:layout_alignBottom="@id/seller_name_title"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/item_details_description"
+        android:text="@string/seller_name"/>
+
+    <TextView
+        android:id="@+id/price_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/seller_name_title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/item_details_title"
+        android:text="@string/price"/>
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/available_title"
+        android:layout_alignBottom="@id/price_title"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/item_details_description"
+        android:text="5 $"/>
+    <TextView
+        android:id="@+id/available_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/price_title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/item_details_title"
+        android:text="@string/available_quantity"/>
+
+    <TextView
+        android:id="@+id/available_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/available_title"
+        android:layout_alignBottom="@id/available_title"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/item_details_description"
+        android:text="10000"/>
+
+    <Button
+        android:id="@+id/message_seller_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/message_seller"
+        android:textAllCaps="false"
+        android:background="@color/main_color"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/add_product_to_cart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add_product_to_cart"
+        android:textAllCaps="false"
+        android:background="@color/main_color"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>
